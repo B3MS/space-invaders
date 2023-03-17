@@ -40,6 +40,31 @@ h1{
 	flex-wrap: wrap;
 }
 
+.battlefield div {
+	width: 30px;
+	height: 30px;
+}
+
+.invader {
+	background-color: yellow;
+}
+
+.shooter {
+	background-color: green;
+}
+
+.laser {
+	background-color: orange;
+}
+
+.boom {
+	background-color: red;
+}
+
+#playAgain, #nextLevel{
+	display: none;
+}
+
 button {
 	display: block;
 	margin: auto;
