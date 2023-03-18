@@ -6,6 +6,10 @@
 body {
     font-family: emulogic;
 	margin: 0px;
+	background-image: url('img/background.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
 }
 
 .container {
@@ -35,9 +39,10 @@ h1{
 .battlefield {
 	width: 450px;
 	height: 450px;
-	border: solid black 1px;
+	border: solid white 1px;
 	display: flex;
 	flex-wrap: wrap;
+	backdrop-filter: blur(5px);
 }
 
 .battlefield div {
@@ -46,19 +51,19 @@ h1{
 }
 
 .invader {
-	background-color: yellow;
+	background-image: url('img/invader.png');
 }
 
 .shooter {
-	background-color: green;
+	background-image: url('img/shooter.png');
 }
 
 .laser {
-	background-color: orange;
+	background-image: url('img/laser.png');
 }
 
 .boom {
-	background-color: red;
+	background-image: url('img/boom.png');
 }
 
 #playAgain, #nextLevel{
@@ -72,8 +77,8 @@ button {
 	font-family: inherit;
 	margin-top: 15px;
 	font-size: 26px;
-	border: 2px solid black;
-	background-color: inherit;
+	border: 2px solid white;
+	background-color: #1f2652;
 	color: inherit;
 	padding: 10px;
 }

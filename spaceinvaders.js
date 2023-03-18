@@ -132,7 +132,7 @@ const shoot = (e) => {
 }
 
 const startGame = () => { 
-  scoreDisplay.innerHTML = 'Score : ' + score;
+  scoreDisplay.innerHTML = 'Score: ' + score;
   for(let i = 0; i < 10; i++){
     invaders.push(i);
   }
@@ -174,14 +174,14 @@ document.getElementById('playAgain').addEventListener('click', () => {
   resetInvaders();
   startGame();
   document.getElementById('playAgain').style.display = 'none';
-  document.querySelector('.level').innerHTML = 'Level ' + level;
-  scoreDisplay.innerHTML = 'Score : ' + score;
+  document.querySelector('.level').innerHTML = 'Level: ' + level;
+  scoreDisplay.innerHTML = 'Score: ' + score;
 });
 
 document.getElementById('nextLevel').addEventListener('click', () => {
   resetInvaders();
   startGame();
-  document.querySelector('.level').innerHTML = 'Level ' + level;
+  document.querySelector('.level').innerHTML = 'Level: ' + level;
   document.getElementById('nextLevel').style.display = 'none';
 });
 
